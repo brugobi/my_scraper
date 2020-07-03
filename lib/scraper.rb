@@ -18,13 +18,13 @@ document = open(url)
 content = document.read
 parsed_content = Nokogiri::HTML(content)
 
-parsed_content.css('.jobsearch-SerpJobCard').css('.title').each do |jobtitle|
-    title = jobtitle.css('.jobtitle').inner_text
-    link =  jobtitle.css('.jobtitle').first.attributes["href"].value
-    puts title
-    # puts link
-    puts '------------------------------'
-end
+# parsed_content.css('.jobsearch-SerpJobCard').css('.title').each do |jobtitle|
+#     title = jobtitle.css('.jobtitle').inner_text
+#     link =  jobtitle.css('.jobtitle').first.attributes["href"].value
+#     puts title
+#     # puts link
+#     puts '------------------------------'
+# end
 
 # parsed_content.css('.jobsearch-SerpJobCard').css('.sjcl').each do |company_name|
 #     name = company_name.css('.company').inner_text
@@ -32,8 +32,4 @@ end
 #     puts '------------------------------'
 # end
 
-# parsed_content.css('.jobsearch-SerpJobCard').css('.jobsearch-SerpJobCard-footer').css('.jobsearch-SerpJobCard-footerActions').css(('result-link-bar-container').css('.result-link-bar').each do |date|
-#     date_info = date.css('.date').inner_text
-#     puts date_info
-#     puts '------------------------------'
-# end
+puts parsed_content.css('.result-link-bar-container').css('.result-link-bar').css('.date').first.inner_text
