@@ -7,14 +7,14 @@ require_relative '../lib/get_link.rb'
     dates = scraper.get_date
     # links = scraper.get_link
 
-    # (0...names.size).each do |index|
-    #     puts "-------------------- index: #{index + 1} --------------------"
-    #     puts "Job Title: #{titles[index]}"
-    #     # puts "Link: #{links[index]}"
-    #     puts "Company: #{names[index]}"
-    #     puts "Date: #{dates[index]}"
-    # end
+    (0...names.size).each do |index|
+        puts "-------------------- index: #{index + 1} --------------------"
+        puts "Job Title: #{titles[index]}"
+        # puts "Link: #{links[index]}"
+        puts "Company: #{names[index]}"
+        puts "Date: #{dates[index]}"
+    end
 
-    puts titles.class
-    puts names.class
-    puts dates.class
+    # puts titles.class
+    # puts names.class
+    # puts dates.class

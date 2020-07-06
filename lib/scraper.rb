@@ -1,32 +1,50 @@
-require 'httparty'
+# require 'httparty'
 require 'Nokogiri'
-#require 'open-uri'
+require 'open-uri'
 
 class Scraper
     attr_accessor :parse_page
 
     def initialize
         doc = HTTParty.get("https://ca.indeed.com/jobs?q=developer&l=London%2C+ON")
-        @parse_page ||= Nokogiri::HTML(doc) #merorized the @parse_page so  it only gets assigned once
+        @parse_page = Nokogiri::HTML(doc) #memorized the @parse_page so  it only gets assigned once
     end 
+
+    # def initialize (link)
+    #     @title = link.jobsearch_container.css('.title').css('.jobtitle').children.map { |title| title.text }.compact
+    #     @company = link.jobsearch_container.css('.sjcl').css('.company').children.map { |title| title.text }.compact
+    #     @date = link.css('.result-link-bar-container').css('.result-link-bar').css('.date').children.map { |title| title.text }.compact
+    # end
+
+    # def get_title (title)
+    #     return false if title.empty?
+    #     title
+    # end    
     
     def get_title
-        jobsearch_container.css('.title').css('.jobtitle').children.map { |title| title.text }.compact
+        title = jobsearch_container.css('.title').css('.jobtitle').children.map { |title| title.text }.compact
+        return false if title.empty?
+        title
     end
     
     def get_company
         jobsearch_container.css('.sjcl').css('.company').children.map { |title| title.text }.compact
     end
     
-    def get_date
+    def get_date 
         parse_page.css('.result-link-bar-container').css('.result-link-bar').css('.date').children.map { |title| title.text }.compact
     end
-
-    private 
     
+    private 
+
     def jobsearch_container
         parse_page.css('.jobsearch-SerpJobCard')
     end
+
+    # def get_link
+    #     jobsearch_container.css('.title').css('.jobtitle').first.attributes["href"].value
+    # end 
+    
 end
 
 # url = "https://ca.indeed.com/jobs?q=developer&l=London%2C+ON"
@@ -36,9 +54,9 @@ end
 
 # parsed_content.css('.jobsearch-SerpJobCard').css('.title').each do |jobtitle|
 #     title = jobtitle.css('.jobtitle').inner_text
-#     link =  jobtitle.css('.jobtitle').first.attributes["href"].value
+#     link =  "https://ca.indeed.com#{jobtitle.css('.jobtitle').first.attributes['href'].value}"
 #     puts title
-#     # puts link
+#     puts link
 #     puts '------------------------------'
 # end
 
