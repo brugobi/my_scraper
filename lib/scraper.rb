@@ -20,6 +20,7 @@ class Scraper
     #     return false if title.empty?
     #     title
     # end    
+    private 
     
     def get_title
         title = jobsearch_container.css('.title').css('.jobtitle').children.map { |title| title.text }.compact
@@ -28,15 +29,17 @@ class Scraper
     end
     
     def get_company
-        jobsearch_container.css('.sjcl').css('.company').children.map { |title| title.text }.compact
+        company = jobsearch_container.css('.sjcl').css('.company').children.map { |title| title.text }.compact
+        return false if company.empty?
+        company
     end
     
-    def get_date 
-        parse_page.css('.result-link-bar-container').css('.result-link-bar').css('.date').children.map { |title| title.text }.compact
+    def get_date
+        date = parse_page.css('.result-link-bar-container').css('.result-link-bar').css('.date').children.map { |title| title.text }.compact
+        return false if date.empty?
+        date
     end
     
-    private 
-
     def jobsearch_container
         parse_page.css('.jobsearch-SerpJobCard')
     end
