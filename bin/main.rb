@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../lib/variables.rb'
+require_relative '../lib/scraper.rb'
 
 scraper = Scraper.new
 titles = scraper.job_title

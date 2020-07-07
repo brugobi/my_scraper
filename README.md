@@ -1,57 +1,70 @@
-# Project Name
+# My Scraper
 
-> One paragraph statement about the project.
+> this is an educational project required by Microverse as part of the curriculum that requires the construction of a simple scraper and for this project I chose the site (https://ca.indeed.com/jobs?q=developer&l=London%2C+ON) to get three informations: The Job's name, Company's name and the date that was posted and add testes.
 
-![screenshot](./app_screenshot.png)
+## Assessment criteria
 
-Additional description about the project and its features.
+- Create effective Ruby code, that solves the problem
+- Apply Ruby coding best practices.
+- Create unit test for Ruby code
+- Implement basic OOP principles (encapsulation, inheritance) in Ruby
+- Have a organized project structure: modules, files and folders
+- Use common Ruby patterns
+- Chooses a simple solution over a more complex answer wherever possible.
+- Ability to multitask and effectively manage time and prioritization.
+- Ability to translate business requirements into software solutions.
+- Ability to perform tasks and complete projects with minimal supervision.
+
+### The original Web site
+
+![screenshot](./assets/images/page.png)
+
+### My scraper Output
+
+![screenshot](./assets/images/my_scraper.png)
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby,
+- Gems used: nokogiri and open-uri,
+- VSCode
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**Cloning a Git repository:**
+ - From the repository, click + in the global sidebar and select Clone this repository under Get to work.
+ - Copy the clone command (either the SSH format or the HTTPS). ...
+ - From a terminal window, change to the local directory where you want to clone your repository.
 
+**To start *My_Scraper*:**
 
-To get a local copy up and running follow these simple example steps.
+ - You need to have ruby installed on your machine and the Gems: ``nokogiri`` and ``open-uri``.
+ - run command ``git clone https://github.com/brugobi/Tic-Tac-Toe-Ruby.git`` to clone the repository
+ - go into the folder containing the project by typing ``cd my_scraper``
+ - type in your terminal the command `` ruby bin/main.rb ``
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
 
 ### Run tests
 
-### Deployment
+ - Unit test (Rspec)
 
+ ![screenshot](./assets/images/test_results.png)
 
+To run the unit testings you will need to install the gem rspect with the following command
 
-## Authors
+`gem install rspec`
 
-👤 **Author1**
+To see the test results run the following command
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+`rspec --format documentation`
 
-👤 **Author2**
+## Author
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+👤 **Bruna Gobi**
+
+- Github: [@brugobi](https://github.com/brugobi)
+- Twitter: [@BrunaGobi2](https://twitter.com/BrunaGobi2)
+- Linkedin: [bruna-gobi](https://www.linkedin.com/in/bruna-gobi/)
 
 ## 🤝 Contributing
 
@@ -65,6 +78,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Microverse
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
