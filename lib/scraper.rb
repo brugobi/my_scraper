@@ -1,4 +1,3 @@
-require 'httparty'
 require 'Nokogiri'
 require 'open-uri'
 
@@ -6,8 +5,10 @@ class Scraper
     attr_accessor :parse_page
 
     def initialize
-        doc = HTTParty.get("https://ca.indeed.com/jobs?q=developer&l=London%2C+ON")
-        @parse_page = Nokogiri::HTML(doc) #memorized the @parse_page so  it only gets assigned once
+        url = "https://ca.indeed.com/jobs?q=developer&l=London%2C+ON"
+        document = open(url)
+        page = document.read
+        @parse_page = Nokogiri::HTML(page) 
     end 
 
     # def initialize (link)
