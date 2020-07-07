@@ -8,7 +8,7 @@ class Scraper
 
   def initialize
     url = 'https://ca.indeed.com/jobs?q=developer&l=London%2C+ON'
-    document = open(url)
+    document = URI.open(url)
     page = document.read
     @parse_page = Nokogiri::HTML(page)
   end
