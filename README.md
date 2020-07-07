@@ -1,6 +1,6 @@
 # My Scraper
 
-> this is an educational project required by Microverse as part of the curriculum that requires the construction of a simple scraper and for this project I chose the site (https://ca.indeed.com/jobs?q=developer&l=London%2C+ON) to get three informations: The Job's name, Company's name and the date that was posted and add testes.
+> this is an educational project required by Microverse as part of the curriculum that requires the construction of a simple scraper and for that I chose the website (https://ca.indeed.com/jobs?q=developer&l=London%2C+ON) to get three informations: The Job's name, Company's name and the date that was posted when It is avaible and I also add testes.
 
 ## Assessment criteria
 
@@ -39,7 +39,7 @@
 **To start *My_Scraper*:**
 
  - You need to have ruby installed on your machine and the Gems: ``nokogiri`` and ``open-uri``.
- - run command ``git clone https://github.com/brugobi/Tic-Tac-Toe-Ruby.git`` to clone the repository
+ - run command ``git clone git@github.com:brugobi/my_scraper.git`` to clone the repository
  - go into the folder containing the project by typing ``cd my_scraper``
  - type in your terminal the command `` ruby bin/main.rb ``
 
