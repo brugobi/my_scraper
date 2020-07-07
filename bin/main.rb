@@ -1,11 +1,10 @@
-require_relative '../lib/scraper.rb'
-require_relative '../lib/get_link.rb'  
+require_relative '../lib/variables.rb'  
     
     scraper = Scraper.new
     titles = scraper.get_title
     names = scraper.get_company
     dates = scraper.get_date
-    # links = scraper.get_link
+    #links = scraper.get_link
 
     (0...names.size).each do |index|
         puts "-------------------- index: #{index + 1} --------------------"
