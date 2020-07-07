@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'Nokogiri'
 require 'open-uri'
 # Class to get the information from website Indeed
