@@ -1,8 +1,8 @@
-require 'Nokogiri'
+require 'nokogiri'
 require 'open-uri'
 # Class to get the information from website Indeed
 class Scraper
-  attr_accessor :parse_page
+  attr_reader :parse_page
 
   def initialize
     url = 'https://ca.indeed.com/jobs?q=developer&l=London%2C+ON'
