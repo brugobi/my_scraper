@@ -1,6 +1,6 @@
 # My Scraper
 
-> this is an educational project required by Microverse as part of the curriculum that requires the construction of a simple scraper and for that I chose the website (https://ca.indeed.com/jobs?q=developer&l=London%2C+ON) to get three informations: The Job's name, Company's name and the date that was posted when It is avaible and I also add testes.
+> this is an educational project required by Microverse as part of the curriculum that requires the construction of a simple scraper and for that I chose the website (https://ca.indeed.com/jobs?q=developer&l=London%2C+ON) to get three informations: The Job's name, Company's name and the date that was posted when It is avaible and I also add tests to check the methods created in the file scraper.rb.
 
 ## Assessment criteria
 
@@ -26,7 +26,7 @@
 ## Built With
 
 - Ruby,
-- Gems used: nokogiri and open-uri,
+- Gems used: nokogiri,
 - VSCode
 
 ## Getting Started
@@ -38,10 +38,12 @@
 
 **To start *My_Scraper*:**
 
- - You need to have ruby installed on your machine and the Gems: ``nokogiri`` and ``open-uri``.
+ - You need to have ruby installed on your machine
  - run command ``git clone git@github.com:brugobi/my_scraper.git`` to clone the repository
+ - run command ``bundle install``
  - go into the folder containing the project by typing ``cd my_scraper``
- - type in your terminal the command `` ruby bin/main.rb ``
+ - go into the folder containing the project by typing ``cd bin``
+ - type in your terminal the command `` ruby main.rb ``
 
 
 ### Run tests
@@ -49,10 +51,6 @@
  - Unit test (Rspec)
 
  ![screenshot](./assets/images/test_results.png)
-
-To run the unit testings you will need to install the gem rspect with the following command
-
-`gem install rspec`
 
 To see the test results run the following command
 
