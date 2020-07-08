@@ -1,6 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 # Class to get the information from website Indeed
+
 class Scraper
   attr_reader :parse_page
 
