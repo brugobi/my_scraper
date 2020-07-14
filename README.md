@@ -1,57 +1,68 @@
-# Project Name
+# My Scraper
 
-> One paragraph statement about the project.
+> this is an educational project required by Microverse as part of the curriculum that requires the construction of a simple scraper and for that I chose the website (https://ca.indeed.com/jobs?q=developer&l=London%2C+ON) to get three informations: The Job's name, Company's name and the date that was posted when It is avaible and I also add tests to check the methods created in the file scraper.rb.
 
-![screenshot](./app_screenshot.png)
+## Assessment criteria
 
-Additional description about the project and its features.
+- Create effective Ruby code, that solves the problem
+- Apply Ruby coding best practices.
+- Create unit test for Ruby code
+- Implement basic OOP principles (encapsulation, inheritance) in Ruby
+- Have a organized project structure: modules, files and folders
+- Use common Ruby patterns
+- Chooses a simple solution over a more complex answer wherever possible.
+- Ability to multitask and effectively manage time and prioritization.
+- Ability to translate business requirements into software solutions.
+- Ability to perform tasks and complete projects with minimal supervision.
+
+### The original Web site
+
+![screenshot](./assets/images/page.png)
+
+### My scraper Output
+
+![screenshot](./assets/images/my_scraper.png)
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby,
+- Gems used: nokogiri,
+- VSCode
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**Cloning a Git repository:**
+ - From the repository, click + in the global sidebar and select Clone this repository under Get to work.
+ - Copy the clone command (either the SSH format or the HTTPS). ...
+ - From a terminal window, change to the local directory where you want to clone your repository.
 
+**To start *My_Scraper*:**
 
-To get a local copy up and running follow these simple example steps.
+ - You need to have ruby installed on your machine
+ - run command ``git clone git@github.com:brugobi/my_scraper.git`` to clone the repository
+ - run command ``bundle install``
+ - go into the folder containing the project by typing ``cd my_scraper``
+ - go into the folder containing the project by typing ``cd bin``
+ - type in your terminal the command `` ruby main.rb ``
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
 
 ### Run tests
 
-### Deployment
+ - Unit test (Rspec)
 
+ ![screenshot](./assets/images/test_results.png)
 
+To see the test results run the following command
 
-## Authors
+`rspec --format documentation`
 
-👤 **Author1**
+## Author
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+👤 **Bruna Gobi**
 
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@brugobi](https://github.com/brugobi)
+- Twitter: [@BrunaGobi2](https://twitter.com/BrunaGobi2)
+- Linkedin: [bruna-gobi](https://www.linkedin.com/in/bruna-gobi/)
 
 ## 🤝 Contributing
 
@@ -65,6 +76,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Microverse
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
